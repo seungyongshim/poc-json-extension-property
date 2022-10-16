@@ -9,7 +9,7 @@ namespace Sample.Tests;
 public record Dto(string A, string B)
 {
     [JsonExtensionData]
-    public IDictionary<string, object> Extensions { get; set; } = new Dictionary<string, object>(StringComparer.Ordinal);
+    public IDictionary<string, JsonElement> Extensions { get; set; } = new Dictionary<string, JsonElement>(StringComparer.Ordinal);
 }
 
 public class PreludeSpec
@@ -30,6 +30,6 @@ public class PreludeSpec
 
         Assert.Equal("A", dto.A);
         Assert.Equal("B", dto.B);
-        Assert.Equal("C", dto.Extensions["C"].ToString());
+        Assert.Equal("C", dto.Extensions["C"].GetString());
     }
 }
