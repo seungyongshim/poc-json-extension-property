@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<coverage version="1.0" date="2022-10-16_00-55-27" tag="7_3257749459">
+  <assembly name="Sample">
+    <class name="Sample.DtoDictionary" coveredlines="5" coverablelines="5" totallines="10" coveredbranches="0" totalbranches="0" coveredcodeelements="3" totalcodeelements="3" />
+    <class name="Sample.DtoJsonObject" coveredlines="5" coverablelines="5" totallines="10" coveredbranches="0" totalbranches="0" coveredcodeelements="3" totalcodeelements="3" />
+  </assembly>
+</coverage>
