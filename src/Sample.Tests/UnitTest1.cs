@@ -6,10 +6,10 @@ using System.Text.Json;
 
 namespace Sample.Tests;
 
-public record Dto(string A, string B)
+public readonly record struct Dto(string A, string B)
 {
     [JsonExtensionData]
-    public IDictionary<string, JsonElement> Extensions { get; set; } = new Dictionary<string, JsonElement>(StringComparer.Ordinal);
+    public IDictionary<string, JsonElement> Extensions { get; init; } 
 }
 
 public class PreludeSpec
