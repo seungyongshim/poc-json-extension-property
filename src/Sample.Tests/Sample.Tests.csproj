@@ -1,8 +1,8 @@
 <Project Sdk="Microsoft.NET.Sdk">
-  <Import Project="../common.props" />
   <PropertyGroup>
     <TargetFramework>net6</TargetFramework>
     <IsPackable>false</IsPackable>
+    <LangVersion>preview</LangVersion>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="coverlet.collector" Version="3.1.2">
@@ -15,8 +15,5 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Sample\Sample.csproj" />
   </ItemGroup>
 </Project>
